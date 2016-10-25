@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd"> 
+
+
+<context:annotation-config />
+
+<bean id="country" class="com.accenture.adf.autowiring.model.Country">
+<property name="name" value="India"></property>
+</bean>
+
+<bean id="capital" class="com.accenture.adf.autowiring.model.Capital">
+<property name="capName" value="Delhi"></property>
+<property name="popu" value="1000"></property>
+</bean>
+
+<bean id="state" class="com.accenture.adf.autowiring.model.State">
+<property name="sName" value="Maharashtra"></property>
+</bean>
+ <!-- Setter injection -->
+<!--<bean id="classic"  class="com.accenture.adf.sprigioc.model.Bullet" lazy-init="true">
+<property name="bulletId" value="101"></property>
+<property name="bulletName" value="classic"></property>
+</bean>
+
+-->
+
+</beans>
