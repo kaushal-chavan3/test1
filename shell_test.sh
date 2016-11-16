@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-pwd >> new.txt
-date
-=======
 pwd
 date >> new.txt
 >>>>>>> kaushal-chavan3-patch-1
